@@ -105,7 +105,7 @@ namespace culebrita.SnakeModificada
 
             snake.Insertar(posiciónObjetivo);
 
-            Console.BackgroundColor = ConsoleColor.Red;
+            Console.BackgroundColor = ConsoleColor.DarkMagenta;
             Console.SetCursorPosition(posiciónObjetivo.X + 1, posiciónObjetivo.Y + 1);
             Console.Write(" ");
 
@@ -114,10 +114,7 @@ namespace culebrita.SnakeModificada
             if (cont > longitudCulebra)
             {
                 //remueve un nodo -------------- metodo aun por definir
-                var removePoint = snake.Eliminar();
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.SetCursorPosition(removePoint.X + 1, removePoint.Y + 1);
-                Console.Write(" ");
+                snake.Eliminar();
             }
             return true;
         }

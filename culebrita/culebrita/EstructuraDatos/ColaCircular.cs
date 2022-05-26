@@ -59,10 +59,9 @@ namespace culebrita.EstructuraDatos
                 listaCola[frente] = null;
                 frente++;
                 if(frente == MAXTM) frente = 0;
-                return (Point)eliminado;
+                return (Point) eliminado;
             }
-
-            return default;
+            return (Point)default;
         }
 
         //Metodo que me retorna mi ultimo elemento 

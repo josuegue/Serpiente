@@ -32,9 +32,9 @@ namespace culebrita
         static void Main()
         {
             //StartGame();
-            StartGameColaCircular();
+            //StartGameColaCircular();
             //StartGameColaLineal();
-            //StartGameListaEnlazada();
+            StartGameListaEnlazada();
         }
 
         private static void StartGame()

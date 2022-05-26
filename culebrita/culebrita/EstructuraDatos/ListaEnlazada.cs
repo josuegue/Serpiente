@@ -16,33 +16,21 @@ namespace culebrita.EstructuraDatos
         
         public void Insertar(Point dto)
         {
-            this.raiz = new Nodo(dto, this.raiz);
-        }
-
-        public void addNew(object dto)
-        {
-            Nodo nuevo;
-            nuevo = new Nodo(dto);
-
-            nuevo.enlace = this.raiz;
-            this.raiz = nuevo;
-
+            raiz = new Nodo(dto, raiz);
         }
 
         //Metodo Eliminar aun por definir, por esto no funciona correctamente
-        public Point Eliminar()
+        public void Eliminar()
         {
-            Nodo anterior = this.raiz;
             Nodo actual;
-            actual = anterior.enlace;
+            actual = raiz.enlace;
             raiz = actual;
-            return (Point)anterior.dato;
         }
 
         //Metodo que me retorna mi ultimo elemento 
         public Point Last()
         {
-            Point retorno = default(Point);
+            Point retorno = default;
             Nodo nodo = this.raiz;
             while (nodo != null)
             {
